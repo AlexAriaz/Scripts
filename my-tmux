@@ -1,0 +1,9 @@
+#!/bin/bash
+#my-tmux---opens tmux to my personal config
+
+tmux has-session -t s1
+if [ $? != 0 ]
+then
+ TMUX= tmux new-session -s s1 -d \; split-window -h \; send-keys 'screenfetch' C-m \; \split-window -v \;
+fi
+tmux attach -t s1

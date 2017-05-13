@@ -1,2 +1,2 @@
 # Scripts
-shell scripts for here and there things
+shell scripts for general use
